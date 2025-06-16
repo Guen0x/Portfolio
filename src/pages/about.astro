@@ -1,117 +1,159 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
 
 <BaseLayout title="About | Stéphane Guenounou" description="En savoir plus sur Stéphane Guenounou">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Découvrez moi et mes compétences."
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Stéphane au travail"
-				/>
-			</Hero>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero title="About" tagline="Découvrez moi">
+        <img
+          width="1553"
+          height="873"
+          src="/assets/at-work.jpg"
+          alt="Stéphane au travail"
+        />
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Je suis Stéphane Guennounou, actuellement étudiant en informatique à
-l'IUT de Villetaneuse Sorbonne Paris Nord. Passionné par l'informatique
-et les jeux vidéo depuis mon plus jeune âge.
-					</p>
-					<p>
-						Mes études actuelles m'ont permis de consolider mes connaissances et
-de développer des compétences techniques solides.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Diplômes</h2>
-				<div class="content">
-					<p>- BUT Informatique (En cours)</p>
-					<p>- Baccalauréat mention bien en 2023</p>
-					<p>- Certification TOEIC avec un score de 880</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Savoir-être</h2>
-				<div class="content">
-					<p>Curieux,Dynamique,Autonome,Travail d'équipe,Organisé,Polyvalent</p>
-				</div>
-				<h2 class="section-title">Savoir-Faire</h2>
-				<div class="content">
-					<p>PHP,HTML,CSS,JavaScript,Java,Python,SQL,</p>
-				</div>
-			</section>
-		</main>
+      <section>
+        <h2 class="section-title">Qui suis-je ?</h2>
+        <div class="content">
+          <p>
+            Je suis Stéphane Guennounou, étudiant en BUT Informatique à l'IUT de Villetaneuse - Sorbonne Paris Nord.
+            Passionné par l'informatique et les jeux vidéo depuis mon enfance, j’ai toujours aimé comprendre comment fonctionnent les systèmes, coder des interfaces, automatiser des tâches et créer des outils utiles.
+          </p>
+        </div>
+      </section>
 
-		<ContactCTA />
-	</div>
+      <section>
+        <h2 class="section-title">Ma mission</h2>
+        <div class="content">
+          <p>
+            Mon objectif est de concevoir des solutions simples à des problèmes complexes. J’aime construire, apprendre, échouer, recommencer — pour devenir chaque jour un meilleur développeur. Ce qui me motive ? L'envie de créer du code propre, utile et bien pensé.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Diplômes</h2>
+        <div class="content">
+          <p>🎓 BUT Informatique (en cours)</p>
+          <p>🎓 Baccalauréat  – Mention Bien (2023)</p>
+          <p>📄 Certification TOEIC – Score : 880</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Projets réalisés</h2>
+        <div class="content">
+          <ul>
+            <li><strong>SAE Annot'chat:</strong> Création d'une application de messagerie en ligne </li>
+            <li><strong>Portfolio personnel :</strong> Site web moderne développé avec Astro & Tailwind CSS.</li>
+            <li><strong>Jeu JavaScript :</strong> Développement d’un mini RPG en JS vanilla et Canvas.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Technologies que j’adore</h2>
+        <div class="content">
+          <p>
+            J'aime développer avec <strong>JavaScript</strong>, <strong>React</strong> et <strong>Node.js</strong>. J’utilise souvent <strong>Astro</strong> pour mes projets web personnels.
+            Je suis aussi fan de <strong>Tailwind CSS</strong> pour son efficacité et sa propreté. J’explore Docker et les APIs en autonomie.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">En dehors du code</h2>
+        <div class="content">
+          <p>
+            Je suis passionné par les jeux vidéo et la course automobile. J’apprends aussi en autodidacte via des plateformes comme YouTube, OpenClassrooms ou DevDocs.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">CV et Réseaux</h2>
+        <div class="content">
+          <p>
+            <a href="/assets/CV_Stephane_Guenounou.pdf" target="_blank">📄 Télécharger mon CV</a> ·
+            <a href="https://www.linkedin.com/in/stéphane-guenounou-88a465312/" target="_blank">🔗 Voir mon LinkedIn</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+  .content {
+    grid-column: 2 / 4;
+    max-width: 700px;
+    line-height: 1.6;
+  }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  .content ul {
+    padding-left: 1.2rem;
+    list-style-type: disc;
+  }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+  .content a {
+    text-decoration: underline;
+    color: var(--primary-color, #60a5fa);
+    transition: color 0.2s ease;
+  }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+  .content a:hover {
+    color: var(--text-light, #fff);
+  }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+  section + section {
+    border-top: 1px solid var(--border-color, #334155);
+    padding-top: 2rem;
+  }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
 </style>

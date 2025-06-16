@@ -25,4 +25,4 @@ Dans ce contexte, la cryptographie joue un rôle important pour assurer la sécu
 
 En bref, le projet devait combiner innovation fonctionnelle sans compromis sur la sécurité informatique pour proposer une solution puissante et fiable de messagerie instantanée annotée.
 
-Voici le lien github où vous pouvez tester vous même l'application : [text](https://github.com/Guen0x/SAE_AppChatAnnotation)
+Voici le lien github où vous pouvez tester vous même l'application : [ICI !](https://github.com/Guen0x/SAE_AppChatAnnotation)
