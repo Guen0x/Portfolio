@@ -25,4 +25,37 @@ Dans ce contexte, la cryptographie joue un rôle important pour assurer la sécu
 
 En bref, le projet devait combiner innovation fonctionnelle sans compromis sur la sécurité informatique pour proposer une solution puissante et fiable de messagerie instantanée annotée.
 
+
+
+##### Points positifs
+
+Projet innovant qui allie messagerie instantanée et annotation émotionnelle, utile pour entraîner une intelligence artificielle sensible aux émotions.
+
+Travail en équipe structuré : organisation efficace, répartition des tâches claire et échanges fluides.
+
+Sécurité des données prise en compte dès le début avec l’intégration de mécanismes de chiffrement pour protéger les messages sensibles.
+
+Interface fonctionnelle et testable directement via l’application GitHub.
+
+Application concrète des compétences en HTML, CSS, JS, PHP et SQL.
+
+##### Points négatifs / Difficultés rencontrées
+
+Complexité de la gestion des émotions subjectives : difficile à annoter précisément pour chaque message.
+
+La sécurité cryptographique, bien que présente, aurait gagné à être renforcée et mieux auditée.
+
+Besoin de mieux définir les cas d’usage réels pour donner plus de sens au projet (chat psychologique, chatbot émotionnel, etc.).
+
+Quelques problèmes d’ergonomie initialement rencontrés (liés à l’annotation en double).
+
+ ##### Auto-évaluation personnelle
+
+Ce projet m’a permis de sortir de ma zone de confort. J’ai renforcé mes compétences en développement fullstack et mieux compris l’enjeu de la sécurité web.
+J’ai aussi réalisé à quel point le lien entre émotion humaine et interprétation informatique est complexe mais passionnant.
+
+Note personnelle : 9/10
+
+Je suis fier de ce que notre équipe a produit. Avec plus de temps, je pourrais améliorer l’UX et renforcer la sécurité.
+
 Voici le lien github où vous pouvez tester vous même l'application : [ICI !](https://github.com/Guen0x/SAE_AppChatAnnotation)

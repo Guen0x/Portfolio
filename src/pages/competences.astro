@@ -1,6 +1,8 @@
 ---
 // fichier : src/pages/competences.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+
 ---
 
 <BaseLayout title="Compétences | Stéphane Guenounou" description="Découvrez mes compétences techniques et professionnelles.">
@@ -70,58 +72,54 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </section>
       </div>
      
-      <section class="but-section">
-        <h2 class="section-title">Compétences du BUT Informatique</h2>
-  <div class="grid-sections">
-    <section class="skill-card fade-in" style="animation-delay: 0.2s">
-      <h3>1. Réaliser un développement d’application</h3>
-      <ul>
-        <li>Analyser les besoins utilisateur</li>
-        <li>Concevoir et implémenter des applications robustes</li>
-        <li>Effectuer des tests et débogage</li>
-      </ul>
-    </section>
-    <section class="skill-card fade-in" style="animation-delay: 0.3s">
-      <h3>2. Optimiser des applications informatiques</h3>
-      <ul>
-        <li>Analyser les performances</li>
-        <li>Optimiser le code et l’architecture</li>
-        <li>Mettre en œuvre des solutions efficaces</li>
-      </ul>
-    </section>
-    <section class="skill-card fade-in" style="animation-delay: 0.4s">
-      <h3>3. Administrer des systèmes informatiques communicants complexes</h3>
-      <ul>
-        <li>Configurer et sécuriser des réseaux</li>
-        <li>Administrer des serveurs et services</li>
-        <li>Superviser et maintenir en conditions opérationnelles</li>
-      </ul>
-    </section>
-    <section class="skill-card fade-in" style="animation-delay: 0.5s">
-      <h3>4. Gérer des données de l’information</h3>
-      <ul>
-        <li>Modéliser des bases de données</li>
-        <li>Exploiter les données via requêtes SQL</li>
-        <li>Garantir l’intégrité et la confidentialité</li>
-      </ul>
-    </section>
-    <section class="skill-card fade-in" style="animation-delay: 0.6s">
-      <h3>5. Conduire un projet</h3>
-      <ul>
-        <li>Organiser le travail en équipe</li>
-        <li>Suivre l'avancement avec des outils adaptés</li>
-        <li>Documenter et livrer le projet</li>
-      </ul>
-    </section>
-    <section class="skill-card fade-in" style="animation-delay: 0.7s">
-      <h3>6. Travailler dans une équipe informatique</h3>
-      <ul>
-        <li>Collaborer efficacement en équipe</li>
-        <li>Utiliser des outils de versionnage (Git)</li>
-        <li>Adopter une communication professionnelle</li>
-      </ul>
-    </section>
+     <section class="but-eval-section">
+  <h2 class="section-title">Mon évaluation des compétences du BUT Informatique</h2>
+  <div class="but-eval-grid">
+
+    <div class="but-card">
+      <h3>1. Développement d’application</h3>
+      <p>✔️ Bonne base en Java, POO, développement web. ❌ Début difficile en architecture logicielle.</p>
+      <div class="eval-bar"><div style="width: 80%">8/10</div></div>
+    </div>
+
+    <div class="but-card">
+      <h3>2. Optimisation d’application</h3>
+      <p>✔️ Requêtes SQL optimisées. ❌ Manque de cas concrets complexes.</p>
+      <div class="eval-bar"><div style="width: 85%">8.5/10</div></div>
+    </div>
+
+    <div class="but-card">
+      <h3>3. Systèmes & Réseaux</h3>
+      <p>✔️ Maîtrise Linux de base, SSH, Apache. ❌ Pas assez de pratique réseau réelle.</p>
+      <div class="eval-bar"><div style="width: 80%">8/10</div></div>
+    </div>
+
+    <div class="but-card">
+      <h3>4. Gestion de données</h3>
+      <p>✔️ Solide en modélisation SQL. ❌ Besoin de projets data plus poussés.</p>
+      <div class="eval-bar"><div style="width: 85%">8.5/10</div></div>
+    </div>
+
+    <div class="but-card">
+      <h3>5. Gestion de projet</h3>
+      <p>✔️ Bonne organisation et maîtrise Trello/Git. ❌ Simulations peu réalistes parfois.</p>
+      <div class="eval-bar"><div style="width: 80%">8/10</div></div>
+    </div>
+
+    <div class="but-card">
+      <h3>6. Travail en équipe</h3>
+      <p>✔️ Communication fluide, esprit collaboratif. ❌ Rythmes parfois compliqués.</p>
+      <div class="eval-bar"><div style="width: 85%">9.5/10</div></div>
+    </div>
+
   </div>
+</section>
+
+  </div>
+</section>
+
+  </div>
+  <ContactCTA />
   </div>
 </BaseLayout>
 
@@ -137,7 +135,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
 
   .competences-page {
-    background-color: var(--bg-page);
+   
     padding: 4rem 1rem;
     min-height: 100vh;
   }
@@ -210,11 +208,58 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     animation: fadeIn 0.8s ease forwards;
     opacity: 0;
   }
-.but-section {
+.but-eval-section {
   margin-top: 4rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border-color);
 }
+
+.but-eval-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.but-card {
+  background: linear-gradient(to bottom, #1e293b, #111827);
+  border: 1px solid var(--border-color, #334155);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: var(--text-muted, #cbd5e1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.but-card:hover {
+  transform: translateY(-4px);
+}
+
+.but-card h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+  color: var(--primary-color, #3b82f6);
+}
+
+.eval-bar {
+  background: #2c3a4a;
+  border-radius: 1rem;
+  height: 0.75rem;
+  margin-top: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.eval-bar div {
+  background-color: var(--primary-color, #3b82f6);
+  height: 100%;
+  color: white;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  padding-left: 0.5rem;
+}
+
+
 
 
 </style>

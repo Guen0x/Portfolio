@@ -70,19 +70,19 @@ import ContactCTA from '../components/ContactCTA.astro';
   </div>
 </section>
 <section class="trajectory-section">
-  <h2 class="section-title">Mon évolution du BUT 1 au BUT 2</h2>
+  <h2 class="section-title">🚀 Mon évolution au fil du BUT</h2>
 
-  <div class="trajectory-block">
+  <div class="trajectory-card fade-in">
     <p>
       Lorsque j’ai intégré le BUT Informatique, je découvrais pour la première fois l’univers du développement professionnel. Dès les premiers mois, j’ai appris les bases solides de l’algorithmique, de la programmation orientée objet et du travail en équipe via les projets SAE. Cela m’a permis d’acquérir des pratiques rigoureuses comme le versionnement avec Git, la rédaction de documentation technique, ou encore le respect des deadlines.
     </p>
 
     <p>
-      Au fil des semestres, j’ai pris conscience que l’informatique était bien plus qu’un ensemble de langages. C’était une logique, une manière de réfléchir, de résoudre des problèmes et de construire des solutions concrètes. Mes progrès en JavaScript et en développement web m’ont naturellement orienté vers le front-end, domaine dans lequel je prends particulièrement plaisir à évoluer.
+      Au fil des semestres, j’ai compris que l’informatique n’était pas seulement un ensemble de langages, mais une manière de penser, de structurer les problèmes et de construire des solutions. Mes progrès en JavaScript et en développement web m’ont naturellement orienté vers le front-end, un domaine dans lequel je m’épanouis pleinement aujourd’hui.
     </p>
 
     <p>
-      Le stage chez Lyman Agency a confirmé mon envie de travailler dans ce domaine. Être intégré à une équipe réelle, contribuer à des projets client, voir le code devenir visible et utilisé : cela a renforcé mon choix de continuer dans le développement web, et potentiellement me spécialiser dans ce domaine par la suite (alternance ou licence pro orientée front).
+      Mon stage chez <strong>Lyman Agency</strong> a confirmé mon intérêt pour le développement web. Intégré à une véritable équipe, j’ai contribué à des projets concrets pour des clients réels, ce qui m’a permis de mesurer l’impact de mon travail. Cette expérience m’a motivé à me spécialiser dans ce domaine, notamment en alternance pour continuer à apprendre en profondeur.
     </p>
   </div>
 </section>
@@ -225,5 +225,42 @@ import ContactCTA from '../components/ContactCTA.astro';
   color: var(--text-muted, #cbd5e1);
   line-height: 1.7;
 }
+.trajectory-section {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color, #334155);
+}
+
+.trajectory-card {
+  background: linear-gradient(to right, #1e293b, #111827);
+  border: 1px solid var(--border-color, #334155);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: var(--text-muted, #cbd5e1);
+  line-height: 1.8;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.trajectory-card p {
+  margin-bottom: 1.2rem;
+}
+
+.trajectory-card strong {
+  color: var(--primary-color, #60a5fa);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 </style>
