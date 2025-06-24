@@ -73,47 +73,59 @@ import ContactCTA from '../components/ContactCTA.astro';
       </div>
      
      <section class="but-eval-section">
-  <h2 class="section-title">Mon évaluation des compétences du BUT Informatique</h2>
+  <h2 class="section-title">🧭 Mon ressenti sur les compétences du BUT Informatique</h2>
+
   <div class="but-eval-grid">
-
-    <div class="but-card">
+    <div class="but-card fade-in">
       <h3>1. Développement d’application</h3>
-      <p>✔️ Bonne base en Java, POO, développement web. ❌ Début difficile en architecture logicielle.</p>
-      <div class="eval-bar"><div style="width: 80%">8/10</div></div>
+      <p>
+        Cette compétence a été mon point d’entrée dans le développement logiciel. J’ai pris goût à concevoir des applications robustes en Java et JavaScript. Au début, j’ai eu du mal avec la logique de conception logicielle (design pattern, structuration), mais avec de la pratique, j’ai gagné en assurance.
+      </p>
+      <p class="score">🧪 Auto-évaluation : <strong>8/10</strong> – Une base solide, encore perfectible sur les grands projets.</p>
     </div>
 
-    <div class="but-card">
+    <div class="but-card fade-in" style="animation-delay: 0.1s">
       <h3>2. Optimisation d’application</h3>
-      <p>✔️ Requêtes SQL optimisées. ❌ Manque de cas concrets complexes.</p>
-      <div class="eval-bar"><div style="width: 85%">8.5/10</div></div>
+      <p>
+        J’ai appris à écrire un code plus propre et plus rapide. Travailler sur des requêtes SQL optimisées ou analyser les performances d’un site m’a aidé à aller au-delà du “ça fonctionne”. Je suis fier d’avoir amélioré ma logique d’analyse, même si je manque encore de contexte réel complexe.
+      </p>
+      <p class="score">🧪 Auto-évaluation : <strong>8.5/10</strong> – Confiant sur l’optimisation locale, à renforcer sur des cas industriels.</p>
     </div>
 
-    <div class="but-card">
+    <div class="but-card fade-in" style="animation-delay: 0.2s">
       <h3>3. Systèmes & Réseaux</h3>
-      <p>✔️ Maîtrise Linux de base, SSH, Apache. ❌ Pas assez de pratique réseau réelle.</p>
-      <div class="eval-bar"><div style="width: 80%">8/10</div></div>
+      <p>
+        J’ai pris plaisir à manipuler des systèmes Linux, configurer des serveurs, comprendre les bases de la communication réseau. C’est un domaine exigeant mais stimulant. Je sens que j’ai encore une marge de progression, notamment sur l’administration réseau en conditions réelles.
+      </p>
+      <p class="score">🧪 Auto-évaluation : <strong>8/10</strong> – À l’aise sur les bases, curieux d’aller plus loin.</p>
     </div>
 
-    <div class="but-card">
+    <div class="but-card fade-in" style="animation-delay: 0.3s">
       <h3>4. Gestion de données</h3>
-      <p>✔️ Solide en modélisation SQL. ❌ Besoin de projets data plus poussés.</p>
-      <div class="eval-bar"><div style="width: 85%">8.5/10</div></div>
+      <p>
+        Modéliser des bases, écrire des requêtes complexes, comprendre les schémas relationnels : cette compétence m’a beaucoup intéressé. J’ai aimé donner du sens aux données et les manipuler avec efficacité. Je ressens une réelle aisance en SQL.
+      </p>
+      <p class="score">🧪 Auto-évaluation : <strong>8.5/10</strong> – Solide, surtout côté structure et interrogation.</p>
     </div>
 
-    <div class="but-card">
+    <div class="but-card fade-in" style="animation-delay: 0.4s">
       <h3>5. Gestion de projet</h3>
-      <p>✔️ Bonne organisation et maîtrise Trello/Git. ❌ Simulations peu réalistes parfois.</p>
-      <div class="eval-bar"><div style="width: 80%">8/10</div></div>
+      <p>
+        J’ai pris goût à organiser le travail, planifier des tâches, suivre un avancement avec Trello ou Git. J’ai appris à prioriser, à communiquer, à livrer dans les temps. Parfois, les projets simulés ne reflètent pas assez le stress du monde réel, mais l’expérience reste formatrice.
+      </p>
+      <p class="score">🧪 Auto-évaluation : <strong>8/10</strong> – Bon sens de l’organisation, à confirmer en entreprise.</p>
     </div>
 
-    <div class="but-card">
+    <div class="but-card fade-in" style="animation-delay: 0.5s">
       <h3>6. Travail en équipe</h3>
-      <p>✔️ Communication fluide, esprit collaboratif. ❌ Rythmes parfois compliqués.</p>
-      <div class="eval-bar"><div style="width: 85%">9.5/10</div></div>
+      <p>
+        J’ai vraiment évolué dans ma manière de collaborer : être à l’écoute, adapter ma communication, résoudre des désaccords techniques avec diplomatie. Le travail en groupe a été l’un des aspects les plus enrichissants de ma formation.
+      </p>
+      <p class="score">🧪 Auto-évaluation : <strong>9.5/10</strong> – Une vraie force pour moi, que je veux continuer à cultiver.</p>
     </div>
-
   </div>
 </section>
+
 
   </div>
 </section>
@@ -257,6 +269,60 @@ import ContactCTA from '../components/ContactCTA.astro';
   font-size: 0.75rem;
   line-height: 0.75rem;
   padding-left: 0.5rem;
+}
+
+.but-eval-section {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.but-eval-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.but-card {
+  background: linear-gradient(to top right, #1e293b, #111827);
+  border: 1px solid var(--border-color, #334155);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: var(--text-muted, #cbd5e1);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  opacity: 0;
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+.but-card:hover {
+  transform: translateY(-4px);
+}
+
+.but-card h3 {
+  color: var(--primary-color, #60a5fa);
+  margin-bottom: 0.6rem;
+}
+
+.score {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--gray-200);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 1rem;
+  border-left: 4px solid var(--primary-color, #60a5fa);
+  border-radius: 0.25rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 

@@ -16,23 +16,20 @@ import Hero from '../components/Hero.astro';
         />
       </Hero>
 
-    <section class="card-section">
-  <h2 class="section-title"> Qui suis-je ?</h2>
-  <div class="card-content">
-    <p>
-      Je suis <strong>Stéphane Guennounou</strong>, étudiant en BUT Informatique à l'IUT de Villetaneuse - Sorbonne Paris Nord. Curieux, logique et passionné, j’ai toujours aimé comprendre comment fonctionnent les systèmes qui nous entourent et développer des solutions utiles. Le code est pour moi une manière de construire, de créer, et d’améliorer le monde qui m’entoure.
-    </p>
-
-    <p>
-      En dehors du code, je suis un <strong>grand amateur de jeux vidéo</strong> . J’aime les défis stratégiques, les systèmes bien pensés, et la compétition. Le jeu m’a appris la patience, l’optimisation, mais aussi la curiosité : comprendre comment fonctionne un gameplay m’inspire dans la création d’expériences numériques immersives.
-    </p>
-
-    <p>
-      Enfin, ma passion pour <strong>les voitures et le sport automobile</strong>  m’a transmis le goût de la performance, de la précision, et de l’esthétique mécanique. Cela m’influence même dans mon travail de développeur : aller vite, mais proprement. Déboguer un code, c’est un peu comme régler un moteur : tout est dans les détails.
-    </p>
-  </div>
-</section>
-
+      <section class="card-section">
+        <h2 class="section-title">👋 Qui suis-je ?</h2>
+        <div class="card-content">
+          <p>
+            Je suis <strong>Stéphane Guennounou</strong>, étudiant en BUT Informatique à l'IUT de Villetaneuse - Sorbonne Paris Nord. Curieux, logique et passionné, j’ai toujours aimé comprendre comment fonctionnent les systèmes qui nous entourent et développer des solutions utiles. Le code est pour moi une manière de construire, de créer, et d’améliorer le monde qui m’entoure.
+          </p>
+          <p>
+            En dehors du code, je suis un <strong>grand amateur de jeux vidéo</strong>. J’aime les défis stratégiques, les systèmes bien pensés, et la compétition. Le jeu m’a appris la patience, l’optimisation, mais aussi la curiosité : comprendre comment fonctionne un gameplay m’inspire dans la création d’expériences numériques immersives.
+          </p>
+          <p>
+            Enfin, ma passion pour <strong>les voitures et le sport automobile</strong> m’a transmis le goût de la performance, de la précision, et de l’esthétique mécanique. Cela m’influence même dans mon travail de développeur : aller vite, mais proprement. Déboguer un code, c’est un peu comme régler un moteur : tout est dans les détails.
+          </p>
+        </div>
+      </section>
 
       <section>
         <h2 class="section-title">Ma mission</h2>
@@ -47,11 +44,31 @@ import Hero from '../components/Hero.astro';
         <h2 class="section-title">Diplômes</h2>
         <div class="content">
           <p>🎓 BUT Informatique (en cours)</p>
-          <p>🎓 Baccalauréat  – Mention Bien (2023)</p>
+          <p>🎓 Baccalauréat – Mention Bien (2023)</p>
           <p>📄 Certification TOEIC – Score : 880</p>
         </div>
       </section>
 
+      <section class="card-section">
+        <h2 class="section-title"> Soft Skills qui me définissent</h2>
+        <div class="card-content">
+          <p>
+            <strong> Pensée systémique :</strong> je prends toujours le temps de comprendre comment chaque élément s’inscrit dans un tout. Je réfléchis aux conséquences globales de chaque décision technique.
+          </p>
+          <p>
+            <strong> Résilience technique :</strong> je ne lâche pas un problème tant qu’il n’est pas résolu. Même face aux bugs les plus tordus, je garde mon calme et ma détermination.
+          </p>
+          <p>
+            <strong> Curiosité adaptative :</strong> j’adore apprendre par moi-même, mais surtout m’adapter : nouvelles technos, nouveaux outils ou méthodes… Je suis un explorateur numérique.
+          </p>
+          <p>
+            <strong> Communication synthétique :</strong> j’aime traduire des idées complexes en concepts simples. Que ce soit à l’oral ou à l’écrit, je cherche toujours à être clair, précis et accessible.
+          </p>
+          <p>
+            <strong> Esprit joueur :</strong> j’aborde le code comme un jeu : explorer, tester, optimiser. Ça me pousse à rester créatif, rigoureux et enthousiaste face à chaque défi.
+          </p>
+        </div>
+      </section>
 
       <section>
         <h2 class="section-title">Technologies que j’adore</h2>
@@ -154,35 +171,35 @@ import Hero from '../components/Hero.astro';
       font-size: var(--text-lg);
     }
   }
+
   .card-section {
-  margin-top: 3rem;
-  background: linear-gradient(to bottom right, #1f2937, #111827);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  border: 1px solid var(--border-color, #334155);
-}
+    margin-top: 3rem;
+    background: linear-gradient(to bottom right, #1f2937, #111827);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color, #334155);
+  }
 
-.card-section .section-title {
-  font-size: 1.8rem;
-  color: var(--primary-color, #ffffff);
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
+  .card-section .section-title {
+    font-size: 1.8rem;
+    color: var(--primary-color, #ffffff);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
 
-.card-content {
-  color: var(--text-muted, #cbd5e1);
-  font-size: 1rem;
-  line-height: 1.8;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
+  .card-content {
+    color: var(--text-muted, #cbd5e1);
+    font-size: 1rem;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
-.card-content strong {
-  color: var(--gray-100);
-}
-
+  .card-content strong {
+    color: var(--gray-100);
+  }
 </style>
