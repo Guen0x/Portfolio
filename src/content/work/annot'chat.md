@@ -49,13 +49,6 @@ Besoin de mieux définir les cas d’usage réels pour donner plus de sens au pr
 
 Quelques problèmes d’ergonomie initialement rencontrés (liés à l’annotation en double).
 
- ##### Auto-évaluation personnelle
 
-Ce projet m’a permis de sortir de ma zone de confort. J’ai renforcé mes compétences en développement fullstack et mieux compris l’enjeu de la sécurité web.
-J’ai aussi réalisé à quel point le lien entre émotion humaine et interprétation informatique est complexe mais passionnant.
-
-Note personnelle : 9/10
-
-Je suis fier de ce que notre équipe a produit. Avec plus de temps, je pourrais améliorer l’UX et renforcer la sécurité.
 
 Voici le lien github où vous pouvez tester vous même l'application : [ICI !](https://github.com/Guen0x/SAE_AppChatAnnotation)

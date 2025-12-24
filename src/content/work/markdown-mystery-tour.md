@@ -37,12 +37,4 @@ La complexité de certaines fonctionnalités (ex : calcul d’expressions imbriq
 
 Gestion des erreurs utilisateur encore améliorable (messages plus précis, meilleure UX côté terminal ou interface).
 
-##### Auto-évaluation personnelle
-
-Ce projet a été un vrai exercice de rigueur et de structuration. J’ai appris à découper un problème en sous-composants, à organiser mon code en classes claires, et à penser long terme.
-
-Il m’a aussi permis de mieux comprendre la puissance de Java dans le cadre d’un projet applicatif.
-
-Note personnelle : 8/10
-
 Je suis désormais à l’aise pour créer des applications Java de petite à moyenne complexité, en adoptant des standards professionnels.

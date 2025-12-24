@@ -35,11 +35,6 @@ Parfois difficile de garder l’équilibre entre rigueur technique et écoute hu
 
 La mise en œuvre des méthodes agiles était encore partiellement maîtrisée, surtout sur le plan des rétrospectives ou de la documentation collaborative.
 
-##### Auto-évaluation personnelle
 
-Cette expérience a confirmé l'importance du facteur humain dans les projets techniques.
-J’ai gagné en assurance, en leadership, et j’ai compris que le succès d’un projet dépend autant du code que de la cohésion d’équipe.
-
-Note personnelle : 8.5/10
 
 Je me sens aujourd’hui plus à l’aise dans la gestion collective d’un projet, tout en restant capable de m’adapter à différents rôles dans l’équipe.
